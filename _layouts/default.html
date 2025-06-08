@@ -25,12 +25,13 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" width="300" />
         {% endif %}
         
-        
-        </br>
-        </br>
+        <br> 
+        <br>
 
         <p class="view">
-            <a href="https://www.biuh-dt.com/"> Home </a>   
+            <a onclick="document.getElementById('popup_contact').style.display='block'">Contact</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.biuh-dt.com/"> BiUH-DT </a>   
             &nbsp;|&nbsp;
             <a href="https://labs.biuh-dt.com/"> Labs </a> 
         </p>
@@ -57,7 +58,20 @@
       
       </section>
       <footer>
-
+        
+      <div id="popup_contact" class="modal">
+          <div class="modal-content">
+              <h3>Contact</h3>
+              <div style="text-align: left;">
+                  ZHANG Feng, PhD, Assoc Prof &nbsp;&nbsp;<a href='https://fzhang.bioinfo-lab.com/'>Info</a> <br>
+                  Program Lead of Digital Technologies    <br>
+                  Email: feng.zhang at hainan-biuh.edu.cn <br> 
+                  <br>
+              </div>
+              <button onclick="document.getElementById('popup_contact').style.display='none'">Close</button>
+          </div>
+      </div>
+        
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
